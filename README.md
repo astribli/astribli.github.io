@@ -1,1 +1,1 @@
-# astribli.github.io
+# AJ Stribling Personal Page
