@@ -8,10 +8,10 @@
 header {
     padding: 20px 35px;
     background-color: gray;
+    border: solid 5px black;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-     
 }
 
 header h1 {
@@ -41,3 +41,14 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+}
+
+.hero img {
+    width: 100%;
+    max-height: auto;
+}
+
+.hero div {
+    width: 100%;
+    height: auto;
+}
