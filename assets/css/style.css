@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*Header Style Start*/
 header {
     padding: 20px 35px;
     background-color: gray;
-    border: solid 5px black;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,12 +18,12 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: white;
+    color: black;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 header nav {
@@ -41,29 +42,53 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    border-bottom: solid 2px black;
+    border-radius: 10px;
+    margin: 0 20px;
 }
 
 /*Hero Style Starts*/
-.hero img {
-    width: 100%;
-    max-height: auto;
+.hero {
+    background-image: url("/assets/images/marble.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
 }
 
-.hero div {
-    width: 100%;
-    height: auto;
+.hero-bg {
+    height: 400px;
+
 }
+
+.profile {
+    
+}
+
+.profile img {
+    height: 200px;
+    width: auto;
+    margin: 100px;
+    border-radius: 50%;
+    text-align: right;
+}
+
 
 /*About Me Style Starts*/
 .about h2 {
-    width: 500px;
-    height: 50px;
-    background-color: gray;
-    border: solid 5px black;
-    padding: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-right: solid 5px black;
+    border-radius: 25%;
+    padding: 40px;
+    padding-right: 1em;
     margin: 10px;
     display: flex;
-    justify-content: center;
 }
 
 .about {
@@ -78,23 +103,26 @@ body {
 /*Work Style Starts*/
 .work {
     display: flex;
-    margin-top: 5em;
+    align-items: center;
 }
 
 .work h2 {
-    width: 500px;
-    height: 50px;
-    background-color: gray;
-    border: solid 5px black;
-    padding: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-right: solid 5px black;
+    border-radius: 25%;
+    padding: 40px;
+    padding-right: 1em;
     margin: 10px;
-    margin-top: 200px;
     display: flex;
-    justify-content: center;
+    
+    
 }
 
 .work-grid-container {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-auto-flow: dense;
@@ -106,7 +134,6 @@ body {
 .grid-item {
     display: flex;
     justify-content: center;
-    border: 5px solid rgba(0, 0, 0, 1);
     margin: 5px auto;
     border-radius: 5px;
     font-size: 35px;
@@ -121,6 +148,17 @@ body {
   display: inline-block;
   text-align: start;
   text-shadow: 2px 2px 2px grey;
+  border-radius: 10px;
+}
+
+.item1 h3 {
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: xx-large;
 }
 
 .item2 {
@@ -133,28 +171,73 @@ body {
     text-shadow: 2px 2px 2px grey;
     font-size: large;
     overflow: hidden;
+    border-radius: 10px;
+}
+
+.item2 h3 {
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
 }
 
 .item3 {
     grid-row: 2;
+    background-image: url(/assets/images/color-blobs.jpg);
+    background-size: 100%;
+    display: inline-block;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    font-size: large;
+    overflow: hidden;
+    border-radius: 10px;
 }
-.item4{
-    grid-row: 6;
+
+.item3 h3 {
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: xx-small;
+    
 }
-.item5 {
+.item4 {
     grid-row: 1;
+    background-image: url(/assets/images/digital-marketing-meeting.jpg);
+    background-size: 100%;
+    display: inline-block;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    font-size: large;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.item4 h3 {
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: smaller;
 }
 
 /*Contact Style Starts Here*/
 .contact h2 {
-    width: 500px;
-    height: 50px;
-    background-color: gray;
-    border: solid 5px black;
-    padding: 5px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-right: solid 5px black;
+    border-radius: 25%;
+    padding: 40px;
+    padding-right: 1em;
     margin: 10px;
     display: flex;
-    justify-content: center;
 }
 
 .contact {
@@ -169,10 +252,41 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-left: 8em;
+    
 }
 
 .contact nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
+    text-decoration: none;
+    font-style: italic;
+    background-color: black;
+    border-radius: 10px;
+    margin: 1em;
 }
+
+
+.contact nav ul li a:link {
+    color: white;
+}
+
+.contact nav ul li a:visited {
+    color: red;
+}
+
+/*Footer Style Start*/
+footer {
+    padding: 20px 35px;
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    border: solid 5px black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: black;
