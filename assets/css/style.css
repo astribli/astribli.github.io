@@ -43,6 +43,7 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
+/*Hero Style Starts*/
 .hero img {
     width: 100%;
     max-height: auto;
@@ -51,4 +52,127 @@ header nav ul li a {
 .hero div {
     width: 100%;
     height: auto;
+}
+
+/*About Me Style Starts*/
+.about h2 {
+    width: 500px;
+    height: 50px;
+    background-color: gray;
+    border: solid 5px black;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: lightgrey;
+}
+
+/*Work Style Starts*/
+.work {
+    display: flex;
+    margin-top: 5em;
+}
+
+.work h2 {
+    width: 500px;
+    height: 50px;
+    background-color: gray;
+    border: solid 5px black;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-auto-flow: dense;
+    gap: 10px;
+    margin: 40px;
+
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    border: 5px solid rgba(0, 0, 0, 1);
+    margin: 5px auto;
+    border-radius: 5px;
+    font-size: 35px;
+    width: 100%;
+}
+
+.item1 {
+  grid-column: span 5;
+  grid-row: span 3;
+  background-image: url(/assets/images/hero-bg.jpg);
+  background-size: 100%;
+  display: inline-block;
+  text-align: start;
+  text-shadow: 2px 2px 2px grey;
+}
+
+.item2 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-image: url(/assets/images/Sean.png);
+    background-size: 100%;
+    display: inline-block;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+    font-size: large;
+    overflow: hidden;
+}
+
+.item3 {
+    grid-row: 2;
+}
+.item4{
+    grid-row: 6;
+}
+.item5 {
+    grid-row: 1;
+}
+
+/*Contact Style Starts Here*/
+.contact h2 {
+    width: 500px;
+    height: 50px;
+    background-color: gray;
+    border: solid 5px black;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+}
+
+.contact nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8em;
+}
+
+.contact nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
