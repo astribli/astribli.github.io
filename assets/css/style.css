@@ -65,10 +65,6 @@ header nav ul li a {
 
 }
 
-.profile {
-    
-}
-
 .profile img {
     height: 200px;
     width: auto;
@@ -124,11 +120,10 @@ body {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-auto-flow: dense;
     gap: 10px;
     margin: 40px;
-
 }
 
 .grid-item {
@@ -142,7 +137,7 @@ body {
 
 .item1 {
   grid-column: span 5;
-  grid-row: span 3;
+  grid-row: span 4;
   background-image: url(/assets/images/hero-bg.jpg);
   background-size: 100%;
   display: inline-block;
@@ -154,7 +149,7 @@ body {
 
 .item1::before {
   grid-column: span 5;
-  grid-row: span 3;
+  grid-row: span 4;
   background-image: url(/assets/images/hero-bg.jpg);
   background-size: 100%;
   display: inline-block;
@@ -181,7 +176,7 @@ body {
 
 .item2 {
     grid-column: span 4;
-    grid-row: span 2;
+    grid-row: span 3;
     background-image: url(/assets/images/Sean.png);
     background-size: 100%;
     display: inline-block;
@@ -222,7 +217,7 @@ body {
 }
 
 .item3 {
-    grid-row: 4;
+    grid-row: 5;
     background-image: url(/assets/images/color-blobs.jpg);
     background-size: 100%;
     display: inline-block;
@@ -263,7 +258,7 @@ body {
     
 }
 .item4 {
-    grid-row: 5;
+    grid-row: 6;
     background-image: url(/assets/images/digital-marketing-meeting.jpg);
     background-size: 100%;
     display: inline-block;
@@ -320,14 +315,11 @@ body {
     align-items: center;
 }
 
-.contact nav ul li {
+.contact nav ul li  {
     list-style-type: none;
     display: inline-block;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
-    
 }
 
 .contact nav ul li a {
@@ -383,14 +375,108 @@ header {
 
 .item2 {
     grid-column: span 5;
-    grid-row: 3;
+    grid-row: span 2;
 }
 
 .item3 {
     grid-column: span 5;
+    grid-row: span 2;
 }
 
 .item4 {
     grid-column: span 5;
+    grid-row: span 2;
 }
 
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    /* this will be applied on any screen smaller than 575px */
+
+header nav ul {
+    display: inline-block;
+    align-items: center;
+}
+
+header nav ul li a {
+    line-height: 1.5;
+    border: none;
+    font-size: 18px;
+}
+
+.about {
+    display: block;
+    text-align: center;
+    margin: 30px;
+}
+
+.about h2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid 5px black;
+    border-right: none;
+    border-radius: 25%;
+    padding-right: 0;
+    padding: 0;
+    margin: 30px;
+    display: block; 
+}
+
+.work {
+    display: block;
+}
+
+.work h2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid 5px black;
+    border-right: none;
+    border-radius: 25%;
+    padding-right: 0;
+    padding: 0;
+    margin: 30px;
+    display: block;
+}
+
+.work-grid-container {
+    width: 100%%;
+    margin: 0; 
+}
+
+.item1, .item2, .item3, .item4 {
+    grid-column: span 5;
+    align-content: center;
+    padding: 0;
+}
+
+.contact {
+    display: block;
+}
+
+.contact h2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    border-bottom: solid 5px black;
+    border-right: none;
+    border-radius: 25%;
+    padding-right: 0;
+    padding: 0;
+    margin: 30px;
+    display: block; 
+}
+
+.contact nav ul li  {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.contact nav ul li a {
+    font-size: 18px;
+}
