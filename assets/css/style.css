@@ -47,6 +47,19 @@ header nav ul li a {
     margin: 0 20px;
 }
 
+header nav ul li a::before {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    border-bottom: solid 2px black;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+header nav ul li a:hover {
+    text-shadow: 2px 2px 5px black;
+}
+
 /*Hero Style Starts*/
 .hero {
     background-image: url("/assets/images/marble.jpg");
