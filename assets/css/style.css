@@ -231,7 +231,7 @@ body {
 
 .item3 {
     grid-row: 5;
-    background-image: url(/assets/images/color-blobs.jpg);
+    background-image: url(/assets/images/GrubbyLogo.png);
     background-size: 100%;
     display: inline-block;
     color: black;
@@ -244,7 +244,7 @@ body {
 
 .item3::before {
     grid-row: 4;
-    background-image: url(/assets/images/color-blobs.jpg);
+    background-image: url(/assets/images/GrubbyLogo.png);
     background-size: 100%;
     display: inline-block;
     color: black;
